@@ -5,21 +5,21 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="ソース ファイル\common">
+      <UniqueIdentifier>{d1c6422d-5b25-4a73-92ca-56c9e332a01c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Actor.cpp">
-      <Filter>ソース ファイル</Filter>
+    <ClCompile Include="pch.cpp">
+      <Filter>ソース ファイル\common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Common.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="Actor.h">
-      <Filter>ソース ファイル</Filter>
+    <ClInclude Include="pch.h">
+      <Filter>ソース ファイル\common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
