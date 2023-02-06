@@ -3,7 +3,7 @@
 // 2016 Takeru Yui All Rights Reserved.
 //-----------------------------------------------------------------------------
 // インクルード
-#include"Common.h"
+#include "pch.h"
 
 void InitialSettingWindow();
 
@@ -19,20 +19,14 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 	}
 	InitialSettingWindow();
 
-	Actor* actor = new Actor();
 
 	while (!CheckHitKey(KEY_INPUT_ESCAPE))
 	{
 		ClearDrawScreen();
 
-		actor->Update();
-
-		actor->Draw();
-
 		ScreenFlip();
 	}
 
-	delete actor;
 
 	// ＤＸライブラリの後始末
 	DxLib_End();
